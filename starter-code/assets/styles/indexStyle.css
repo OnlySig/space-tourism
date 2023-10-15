@@ -58,6 +58,7 @@ span {
 
 .ancor__itens {
     display: flex;
+    gap: 32px;
     width: 100%;
     flex-direction: column;
 }
@@ -117,6 +118,8 @@ span {
 .active {
     transform: translateX(0);
 }
+
+/*-------------------NAVBAR---------------------*/
 
 .content__container {
     padding: 24px;
@@ -261,17 +264,21 @@ span {
     }
 
     .test:hover {
-        margin-bottom: 20vh;
         border: 50px solid rgba(255, 255, 255, 0.137);
         border-radius: 999px;
     }
+
+    .test:not(:hover) {
+        border: 0px solid rgba(255, 255, 255, 0.137);
+      }
 }
 
 /*---------------------DESKTOP------------------------*/
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1360px) {
     body {
         background-image: url(/starter-code/assets/home/background-home-desktop.jpg);
+        height: auto;
     }
 
     .main__container {
@@ -288,14 +295,14 @@ span {
     }
 
     .navList {
-        height: 10vh;
+        height: 90px;
         width: 1000px;
         margin-top: 40px;
     }
 
     .row {
         height: 1px;
-        width: 37vw;
+        width: 15vw;
         background: #ffffff3d;
     }
 
@@ -312,7 +319,7 @@ span {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        padding: 106px 170px;
+        padding: 156px 170px;
     }
     
     .title__container {
@@ -329,5 +336,13 @@ span {
     .test {
         position: absolute;
         margin-right: 250px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .row {
+        height: 1px;
+        width: 40vw;
+        background: #ffffff3d;
     }
 }
