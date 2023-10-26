@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/assets/destination/background-destination-mobile.jpg);
+    background-image: url(../destination/background-destination-mobile.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -249,7 +249,7 @@ a {
 
 @media screen and (min-width: 768px) {
     body {
-        background-image: url(/assets/destination/background-destination-tablet.jpg);
+        background-image: url(../destination/background-destination-tablet.jpg);
         height: auto;
     }
     .main__container {
@@ -356,7 +356,7 @@ a {
 @media screen and (min-width: 1440px) {
 
     body {
-        background-image: url(/assets/destination/background-destination-desktop.jpg);
+        background-image: url(../destination/background-destination-desktop.jpg);
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
