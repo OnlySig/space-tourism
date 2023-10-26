@@ -1,0 +1,349 @@
+/*MOBILE FIRST!*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: #D0D6F9;
+}
+
+.main__container {
+    padding: 24px;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.svgLogo {
+    width: 40px;
+    height: 40px;
+}
+
+.navList {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 32px 0px 32px 32px;
+    gap: 70px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 65vw;
+    height: 100vh;
+    transform: translateX(100%);
+    letter-spacing: 2.7px;
+    transition: .5s;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+}
+
+.ancor__itens {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.amburgerAbrir {
+    z-index: 1;
+    cursor: pointer;
+}
+
+.ancor__home {
+    border-right: 4px solid rgba(255, 255, 255);
+}
+
+.ancor__home, .ancor__destination, .ancor__crew, .ancor__Technology {
+    height: 31px;
+    display: flex;
+    align-items: center;
+}
+
+.ancor__destination:hover, .ancor__crew:hover, .ancor__Technology:hover{
+    border-right: 4px solid rgba(255, 255, 255, 0.5);
+}
+
+.btnFechar {
+    width: 100%;
+    position: relative;
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: block;
+}
+
+.navList li {
+    list-style: none;
+}
+
+.navList a {
+    color: #FFF;
+    font-weight: 400;
+    text-transform: uppercase   ;
+}
+
+.btnFechar img {
+    position: absolute;
+    right:  32px;
+}
+
+.ancor__span {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16PX;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+/*-------------------NAVBAR---------------------*/
+
+.content__container {
+    padding: 24px;
+    text-align: center;
+}
+
+.title__container .subtitle {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    font-size: 1rem;
+}
+
+.title__container .title {
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    margin: 16px 0px;
+    font-weight: 400;
+    color: #fff;
+    font-size: 5rem;
+}
+
+.span__space {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Barlow', serif;
+}
+
+.explore__container {
+    margin-top: 81px;
+    display: flex;
+    justify-content: center;
+}
+
+.explore__container a {
+    font-family: 'Barlow', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #FFF;
+    border-radius: 100px;
+    color: #0B0D17;
+    font-weight: 400;
+    letter-spacing: 1.25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*--------------------------TABLET------------------------*/
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background-image: url(/assets/home/background-home-tablet.jpg);
+    }
+
+    .svgLogo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .amburgerAbrir {
+        display: none;
+    }
+
+    .navList {
+        padding-left: 48px;
+        transform: translateX(0%);
+        top: 0;
+        bottom: auto;
+        width: 830px;
+        height: 96px;
+        padding: 0;
+        gap: 0px;
+    }
+
+    .ancor__itens {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100vh;
+    }
+
+    .ancor__home, .ancor__destination, .ancor__crew, .ancor__Technology {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: .2s;
+    }
+
+    .ancor__destination:hover, .ancor__crew:hover, .ancor__Technology:hover {
+        border-right: none;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .ancor__span {
+        display: none;
+    }
+
+    .btnFechar {
+        display: none;
+    }
+
+    .ancor__home {
+        border-right: none;
+        border-bottom: 4px solid rgba(255, 255, 255);
+    }
+
+    .content__container {
+        padding: 106px 159px;
+    }
+
+    .content__container .title {
+        font-size: 9.375rem;
+    }
+
+    .content__container .subtitle {
+        letter-spacing: 3.375px;
+    }
+
+    .span__space {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .explore__container {
+        margin-top: 156px;
+    }
+
+    .explore__container a {
+        width: 242px;
+        height: 242px;
+        font-size: 32px;
+        border-radius: 999px;
+        letter-spacing: 2px;
+    }
+
+    .test {
+        transition: .5s;
+        position: absolute;
+    }
+
+    .test:hover {
+        border: 50px solid rgba(255, 255, 255, 0.137);
+        border-radius: 999px;
+    }
+
+    .test:not(:hover) {
+        border: 0px solid rgba(255, 255, 255, 0.137);
+      }
+}
+
+/*---------------------DESKTOP------------------------*/
+
+@media screen and (min-width: 1360px) {
+    body {
+        background-image: url(/assets/home/background-home-desktop.jpg);
+        height: auto;
+    }
+
+    .main__container {
+        padding: 64px 0px 0px 55px;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: flex-start
+    }
+
+    .row {
+        margin-left: 8vw;
+    }
+
+    .navList {
+        height: 90px;
+        width: 1000px;
+        margin-top: 40px;
+    }
+
+    .row {
+        height: 1px;
+        width: 15vw;
+        background: #ffffff3d;
+    }
+
+    .ancor__span {
+        display: block;
+    }
+    
+    .ancor__item {
+        display: flex;
+        gap: 11px;
+    }
+
+    .content__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 156px 170px;
+    }
+    
+    .title__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 444px;
+    }
+
+    .span__space {
+        text-align: justify;
+    }
+
+    .test {
+        position: absolute;
+        margin-right: 250px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .row {
+        height: 1px;
+        width: 40vw;
+        background: #ffffff3d;
+    }
+}

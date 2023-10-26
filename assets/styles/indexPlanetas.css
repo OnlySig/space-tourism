@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+span {
+    color: #D0D6F9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main__container {
+    padding: 24px;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.svgLogo {
+    width: 40px;
+    height: 40px;
+}
+
+.navList {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 32px 0px 32px 32px;
+    gap: 70px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 65vw;
+    height: 100vh;
+    transform: translateX(100%);
+    letter-spacing: 2.7px;
+    transition: .5s;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+}
+
+.ancor__itens {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.amburgerAbrir {
+    cursor: pointer;
+    z-index: 1;
+}
+
+.ancor__destination {
+    border-right: 4px solid rgba(255, 255, 255);
+}
+
+.ancor__home, .ancor__destination, .ancor__crew, .ancor__Technology {
+    height: 31px;
+    display: flex;
+    align-items: center;
+}
+
+.ancor__destination:hover, .ancor__crew:hover, .ancor__Technology:hover{
+    border-right: 4px solid rgba(255, 255, 255, 0.5);
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    display: block;
+}
+
+.navList li {
+    list-style: none;
+}
+
+.navList a {
+    color: #FFF;
+    font-weight: 400;
+    text-transform: uppercase   ;
+}
+
+.ancor__span {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16PX;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+/*-------------------NAVBAR---------------------*/
+
+.subTitle {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.subTitle .num {
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    opacity: 0.25;
+}
+
+.title__span {
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.image__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.image__container img {
+    width: 170px;
+    height: 170px;
+}
+
+.destinationBar {
+    display: flex;
+    justify-content: center;
+}
+
+.destination__itens {
+    display: flex;
+    margin: 26px 0px 20px 0px;
+    justify-content: space-between;
+    gap: 26px;
+    padding: 0;
+}
+
+.destination__item {
+    list-style-type: none;
+}
+
+.destination__title {
+    color: #FFF;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    margin: 0;
+}
+
+.moon:hover, .mars:hover, .europa:hover, .titan:hover {
+    padding-bottom: 8px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.493);
+    cursor: pointer;
+}
+
+/* .moon:active, .mars:active, .europa:active, .titan:active {
+    border-bottom: 3px solid rgba(255, 255, 255);
+} */
+
+.mb {
+    border-bottom: 3px solid rgba(255, 255, 255);
+    padding-bottom: 8px;
+}
+
+.content__infos {
+    text-align: center;
+    padding: 24px;
+}
+
+.infos__top {
+    border-bottom: 1px solid #383B4B;
+    padding-bottom: 32px;
+}
+
+.title__info {
+    color: #FFF;
+    font-family: "Bellefair", sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.text__info {
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.infos__button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    gap: 32px;
+}
+
+.subTitle__info {
+    color: #D0D6F9;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2.362px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.distance {
+    color: #FFF;
+    font-family: "Bellefair", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.mt {
+    margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(/assets/destination/background-destination-tablet.jpg);
+        height: auto;
+    }
+    .main__container {
+        margin-bottom: 40px;
+    }
+
+    .svgLogo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .amburgerAbrir {
+        display: none;
+    }
+
+    .amburgerFechar {
+        display: none;
+    }
+
+    .navList {
+        padding-left: 48px;
+        transform: translateX(0%);
+        top: 0;
+        bottom: auto;
+        width: 80vw;
+        height: 96px;
+        padding: 0;
+        gap: 0px;
+    }
+
+    .ancor__itens {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100vh;
+    }
+    .ancor__home, .ancor__destination, .ancor__crew, .ancor__Technology {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        transition: .2s;
+    }
+
+    .ancor__destination:hover, .ancor__crew:hover, .ancor__Technology:hover, .ancor__home:hover {
+        border-right: none;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .ancor__destination {
+        border-right: none;
+        border-bottom: 4px solid rgba(255, 255, 255);
+    }
+
+    .content__container {
+        padding: 0px 24px;
+    }
+
+    .subTitle {
+        justify-content: flex-start;
+    }
+    .title__span {
+        font-size: 20px;
+    }
+
+    .num {
+        font-size: 20px !important;
+    }
+
+    .image__container img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .destination__itens {
+        gap: 35px;
+    }
+
+    .destination__title {
+        font-size: 16px;
+    }
+
+    .title__info {
+        font-size: 80px;
+    }
+
+    .text__info {
+        margin: auto;
+        display: block;
+        font-size: 16px;
+        line-height: 28px;
+        width: 573px;
+    }
+
+    .infos__top {
+        padding-bottom: 49px;
+    }
+
+    .infos__button {
+        flex-direction: row;
+        justify-content: center;
+        gap: 120px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        background-image: url(/assets/destination/background-destination-desktop.jpg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .main__container {
+        margin: 40px 0px 76px;
+        padding: 39px 55px;
+    }
+
+    .navBar {
+        justify-content: flex-start;
+    }
+
+    .navList{
+        top: auto;
+        height: 90px;
+        width: 1000px;
+    }
+
+    .row {
+        margin-left: 5vw;
+        height: 1px;
+        width: 40vw;
+        background: #ffffff3d;
+    }
+    
+    .desk {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 64px;
+    }
+
+    .content__container {
+        padding: 0px 50px;
+    }
+
+    .subTitle {
+        margin-left: 7vw;
+        gap: 28px;
+    }
+
+    .title__span {
+        font-size: 28px;
+    }
+
+    .subTitle .num {
+        font-size: 28px !important;
+    }
+
+    .image__container {
+        margin-top: 20px;
+    }
+
+    .image__container img{
+        width: 445px;
+        height: 445px;
+    }
+
+    .asideR {
+        width: 445px;
+    }
+
+    .destinationBar {
+        justify-content: start;
+    }
+
+    .destination__itens {
+        margin: 26px 0px 20px 1vw;
+    }
+
+    .content__infos {
+        text-align: start;
+    }
+
+    .title__info {
+        font-size: 100px;
+    }
+
+    .infos__button {
+        justify-content: normal;
+        gap: 79px;
+    }
+
+    .text__info {
+        display: inline;
+        font-size: 18px;
+    }
+}
